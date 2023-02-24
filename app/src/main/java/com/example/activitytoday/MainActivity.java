@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity {
         Log.w(TAG, "This is a warn log");
         Log.e(TAG, "This is an error log");
 
-        Button button = (Button) findViewById(R.id.button);
+        Button send = (Button) findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity,this);
+                //Intent intel = new Intent(MainActivity.this, ThirdActivity.class);
                 startActivity(intent);
             }
         });
