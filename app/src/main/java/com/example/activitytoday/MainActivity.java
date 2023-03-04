@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         Log.v(TAG, "This is a verbose log");
         Log.d(TAG, "This is a debug log");
@@ -32,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "Button Clicked");
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity,this);
+                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
                 //Intent intel = new Intent(MainActivity.this, ThirdActivity.class);
                 startActivity(intent);
             }

@@ -12,6 +12,13 @@
         android:theme="@style/Theme.ActivityToday"
         tools:targetApi="31">
         <activity
+            android:name=".ListActivity1"
+            android:exported="true" >
+            <intent-filter>
+
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ThirdActivity"
             android:exported="true">
             <intent-filter>
