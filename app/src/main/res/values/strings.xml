@@ -6,11 +6,11 @@
     <string name="message">Message</string>
     
     <string-array name="numbers">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Four</item>
-        <item>Five</item>
+        <item>Select a robot..</item>
+        <item>Megatron</item>
+        <item>Bumblebee</item>
+        <item>Optimus Prime</item>
+        <item>Star Scream</item>
     </string-array>
 
 
