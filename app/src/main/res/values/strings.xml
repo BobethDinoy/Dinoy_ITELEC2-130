@@ -4,6 +4,14 @@
     <string name="to">To</string>
     <string name="subject">Subject</string>
     <string name="message">Message</string>
+    
+    <string-array name="numbers">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
 
 
 </resources>
