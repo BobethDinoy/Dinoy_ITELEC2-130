@@ -4,7 +4,7 @@
     <string name="to">To</string>
     <string name="subject">Subject</string>
     <string name="message">Message</string>
-    
+
     <string-array name="numbers">
         <item>Select a robot..</item>
         <item>Megatron</item>
@@ -12,6 +12,8 @@
         <item>Optimus Prime</item>
         <item>Star Scream</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
