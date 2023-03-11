@@ -3,9 +3,9 @@ package com.example.activitytoday;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,13 +35,13 @@ public class MainFrag extends AppCompatActivity {
                 loadFragment(new FragB());
             }
         });
-        public void loadFragment(Fragment fragment) {
-            
-            FragmentManager fa = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fa.beginTransaction();
 
-            fragmentTransaction.replace(R.id.frameLayout, fragment);
-            fragmentTransaction.commit();
-        }
+    }
+
+    private void loadFragment(Fragment fragment) {
+        FragmentManager fa = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fa.beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout, fragment);
+        fragmentTransaction.commit();
     }
 }
